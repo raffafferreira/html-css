@@ -1,0 +1,37 @@
+main{
+    background-color: rgb(34, 34, 34);
+    margin: auto;
+    width: 800px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+h1{
+    background-color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    background-color: green;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+p{
+    background-color: green;
+    font-family: sans-serif;
+    color: white;
+}
+
+ul{
+    background-color: green;
+    font-family: sans-serif;
+    color: white;
+
+}
+
