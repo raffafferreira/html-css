@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itensmenu">
+            <ul>
+                <li><a href="#">opcao 1</a></li>
+                <li><a href="#">opcao 2</a></li>
+                <li><a href="#">opcao 3</a></li>
+                <li><a href="#">opcao 4</a></li>
+                <li><a href="#">opcao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sit similique laudantium dignissimos facere, beatae molestias sed, maxime sequi, deserunt at porro? Pariatur, commodi ipsa fuga quisquam magni et modi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis itaque laborum, fugiat quia quod iusto unde impedit, commodi saepe ea quam animi dicta nemo quae voluptates veniam eligendi asperiores aliquid quisquam natus fugit architecto recusandae! Et vitae hic non dolorem labore. Repellendus quia explicabo tenetur, quas quos asperiores distinctio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, tenetur est explicabo amet odio totam cupiditate, quibusdam ea culpa at consequatur recusandae nisi.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic perferendis consequuntur corrupti laboriosam quaerat quo dolore animi? Possimus nesciunt sint repellendus facilis tempora consequatur iusto beatae? Sit, reprehenderit aliquid! Vel, distinctio molestiae! Vel sed quia expedita harum et quisquam, ipsum quos. Dolores aliquid unde non facilis quasi neque odit est veniam architecto quidem voluptatibus, doloribus accusantium autem. Laborum, qui? Voluptatem recusandae totam id sit nesciunt iure voluptates cumque animi porro perspiciatis sint provident, doloribus omnis. Sint id, vero error exercitationem fuga est laudantium vel distinctio similique laborum magnam quas quasi officia asperiores itaque eligendi ab placeat commodi sunt accusantium nisi?</p>
+            
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+        function clickMenu(){
+            if(itensmenu.style.display == 'block'){
+                itensmenu.style.display = 'none'
+            }else{
+                itensmenu.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itensmenu.style.display = 'block'
+            }else{
+                itensmenu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
